@@ -12,9 +12,9 @@ const postQuote = async (quoteObject, login = false) => {
 
   if (login) {
     await instagram.login();
+  } else {
+    await instagram.post(postURL, postCaption);
   }
-
-  await instagram.post(postURL, postCaption);
 };
 
 const quoteIndex = Math.floor(Math.random() * quotes.length);
