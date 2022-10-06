@@ -3,6 +3,9 @@ Automatically post quote images to the specified instagram account.
 
 Currently this project is in BETA stage.
 
+## Commands
+- `npm start` - post a new quote to the specified instagram account
+- `npm run login` - login to the instagram account
 
 ## Environment Variables
 

@@ -19,4 +19,5 @@ const postQuote = async (quoteObject, login = false) => {
 
 const quoteIndex = Math.floor(Math.random() * quotes.length);
 const quoteObject = quotes[quoteIndex];
-postQuote(quoteObject);
+
+postQuote(quoteObject, process.argv[2] && process.argv[2] === "login");
